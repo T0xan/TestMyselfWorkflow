@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\T0xanGames\BaseCode\FrustrumCollider.cs" />
+    <Compile Include="Assets\T0xanGames\BaseCode\T0Math.cs" />
     <Compile Include="Assets\T0xanGames\UnitsManagement\Code\PlayerInput.cs" />
     <Compile Include="Assets\T0xanGames\UnitsManagement\Code\PlayerComponent.cs" />
     <Compile Include="Assets\CustomFrustum.cs" />

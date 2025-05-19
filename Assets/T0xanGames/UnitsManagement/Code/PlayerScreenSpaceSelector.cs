@@ -49,7 +49,7 @@ namespace T0xanGames.UnitsManagement
         public void UpdateSelecting(ISelectable[] total)
         {
             Vector2 delta = Base.Input.MousePosition - _selectionScreenRect.position;
-            _selectionScreenRect.size = delta;
+            _selectionScreenRect.size = delta.SnapComponents(1.0f);
 
             UpdateProjectionPlanes();
             Project(total);
