@@ -1,0 +1,6 @@
+Designed by T0xanGames (t0xan), 2025.
+
+Task reference: https://youtu.be/5givv_nXOiY?si=4cQ-Mkk1n0aJgyBJ
+Task development time: 9 hours. Writing the overall architecture of the code took about 4 hours.
+	The rest of the time was spent working with the projection. I've never done anything like what I did in this project before.
+	It took a lot of time to create and debug the mechanics of selecting a part of the screen and creating frustrum planes
