@@ -3,6 +3,6 @@
     public interface ISubordinate
     {
         public FollowPoint GetTargetPoint();
-        public void SetTargetPoint(FollowPoint point);
+        public void SetTargetPoint(object sender, FollowPoint point);
     }
 }

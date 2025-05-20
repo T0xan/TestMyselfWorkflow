@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace T0xanGames.Utils
 {
@@ -56,8 +57,17 @@ namespace T0xanGames.Utils
             return point;
         }
 
+        /// <summary>
+        /// Project a same place from screen space to 6 world-spaced planes. (left, right, bottom, up, near, far)
+        /// </summary>
+        /// <param name="cam"></param>
+        /// <param name="screenRect">Rect of screen place in screen coorditanes.</param>
+        /// <param name="planes">Result planes.</param>
         public static void ProjectFrustrumFromCamera(Camera cam, Rect screenRect, ref Plane[] planes)
         {
+            if (planes.Length != 6)
+                throw new ArgumentOutOfRangeException(nameof(planes));
+
             Rect normalizedRect = GetNormalizedRect(screenRect);
             Vector2[] screenCorners = GetOrderedCorners(normalizedRect);
 

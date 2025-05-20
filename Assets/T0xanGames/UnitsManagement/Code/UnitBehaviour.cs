@@ -9,6 +9,8 @@ namespace T0xanGames.UnitsManagement
         [Header("References:")]
         [SerializeField]
         private NavMeshAgent m_Agent;
+        [SerializeField]
+        private bool m_CanControl; // example
 
         [Space]
         [SerializeField]
@@ -70,8 +72,14 @@ namespace T0xanGames.UnitsManagement
             return _point;
         }
 
-        public void SetTargetPoint(FollowPoint point)
+        public void SetTargetPoint(object sender, FollowPoint point)
         {
+            if (!m_CanControl && sender is PlayerUnitsManagment)
+            {
+                print("םוע טהט םגץי");
+                return;
+            }
+
             _point = point;
             OnTargetPointSetted?.Invoke(point);
         }

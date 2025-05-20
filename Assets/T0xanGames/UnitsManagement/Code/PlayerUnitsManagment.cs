@@ -49,7 +49,7 @@ namespace T0xanGames.UnitsManagement
             {
                 if (unit is ISubordinate subordinate)
                 {
-                    subordinate.SetTargetPoint(point);
+                    subordinate.SetTargetPoint(this, point);
                 }
             }
 

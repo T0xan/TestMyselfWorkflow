@@ -152,7 +152,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: fa7a662c7fed0dc43b8fb40d8a612b52, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 1718137010390730136}
   - component: {fileID: 5368179098916667918}
   m_Layer: 0
-  m_Name: Unit
+  m_Name: EnemyUnit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Agent: {fileID: 6325832825818705260}
-  m_CanControl: 1
+  m_CanControl: 0
   m_Size: {x: 0.7, y: 2, z: 0.7}
   m_Offset: {x: 0, y: 1, z: 0}
 --- !u!114 &1718137010390730136
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_Eyes:
   - {fileID: 2163215290598372881}
   - {fileID: 3594611656926384813}
-  m_SmoothTime: 5
+  m_SmoothTime: 10
   m_Offset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &8392425963776318584
 GameObject:
@@ -396,7 +396,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.014, y: 0.005, z: 0.218}
-  m_LocalScale: {x: 0.63273877, y: 0.63273877, z: 0.63273877}
+  m_LocalScale: {x: 0.59694475, y: 0.59694475, z: 0.59694475}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3594611656926384813}
@@ -569,7 +569,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.014, y: 0.005, z: 0.218}
-  m_LocalScale: {x: 0.63273877, y: 0.63273877, z: 0.63273877}
+  m_LocalScale: {x: 0.59694475, y: 0.59694475, z: 0.59694475}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2163215290598372881}
